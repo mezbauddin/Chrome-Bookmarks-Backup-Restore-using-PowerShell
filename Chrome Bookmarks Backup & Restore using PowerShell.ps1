@@ -1,3 +1,30 @@
+<#
+.SCRIPT NAME
+    Chrome Bookmarks Backup & Restore using PowerShell
+
+.SYNOPSIS
+    PowerShell script to back up and restore Chrome bookmarks.
+
+.DESCRIPTION
+    This script allows users to back up and restore Chrome bookmarks in JSON format.
+    It provides a simple way to save the bookmarks file to the Documents folder or 
+    restore bookmarks from an existing backup, using a File Explorer dialog for selection.
+
+.AUTHOR
+    Mezba Uddin
+
+.VERSION
+    1.0
+
+.LASTUPDATED
+    2024-11-06
+
+.NOTES
+    - Requires PowerShell with Windows Forms available.
+    - Chrome should be closed before running the script to avoid file lock issues.
+
+#>
+
 # Load Windows Forms for File Explorer dialog
 Add-Type -AssemblyName System.Windows.Forms
 
